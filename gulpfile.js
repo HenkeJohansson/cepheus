@@ -13,7 +13,7 @@ var runSequence = require('run-sequence');
  */
 gulp.task('sass', function() {
 	return gulp.src('app/scss/style.scss')
-		.pipe(sass())
+		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
 			cascade: false
