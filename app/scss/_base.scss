@@ -1,0 +1,93 @@
+* {
+	font-family: 'Source Code Pro', monospace;
+	color: $tech-intence;
+}
+
+body {
+	font-size: 16px;
+}
+
+/*==================================
+=            TYPOGRAPHY            =
+==================================*/
+
+
+
+/*=====  End of TYPOGRAPHY  ======*/
+
+
+
+
+.wrapper {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.terminal {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	border-radius: 0 0 4px 4px;
+	background-color: rgba(0,0,0, .6);
+
+	.top-bar {
+		content: '';
+		border-radius: 4px 4px 0 0;
+		border-bottom: 1px solid #7e7e7e;
+		position: absolute;
+		padding-left: 3px;
+		display: flex;
+		align-items: center;
+		top: -23px;
+		left: 0;
+		height: 23px;
+		width: 100%;
+		background: linear-gradient(#f3f3f3, #d4d4d4);
+
+		span {
+			display: inline-block;
+			border-radius: 50%;
+			width: 13px;
+			height: 13px;
+			margin-left: 4px;
+			margin-right: 4px;
+
+			&.close {
+				background-color: $terminate;
+			}
+
+			&.min {
+				background-color: $warning;
+			}
+
+			&.max {
+				background-color: $run;
+			}
+		}
+	}
+
+	.window {
+		padding-left: 5px;
+	}
+
+	.comp-name {
+		padding-left: 5px;
+	}
+
+	input.comand {
+		border: 0;
+		box-shadow: none;
+		background-color: transparent;
+		outline: none;
+		font-size: 1rem;
+		color: $tech-intence;
+
+		&::placeholder {
+			color: $tech-intence;
+		}
+	}
+}

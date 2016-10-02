@@ -3,11 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Terminal</title>
-
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Henke</h1>
+	<div class="wrapper">
+		
+		<div class="terminal">
+			<div class="top-bar">
+				<span class="close"></span>
+				<span class="min"></span>
+				<span class="max"></span>
+			</div><!-- .top-bar -->
+			<div class="window"></div><!-- .window -->
+			<span class="comp-name">[mainframe] $ <span>&block;</span></span><!-- .comp-name -->
+			<input type="text" class="comand">
+		</div><!-- .terminal -->
+
+	</div><!-- .wrapper -->
 
 	<!--build:js js/main.min.js -->
 	<script src="js/app.js"></script>
