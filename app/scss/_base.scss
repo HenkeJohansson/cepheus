@@ -83,7 +83,8 @@ body {
 		padding-left: 5px;
 
 		span {
-			animation: blink infinite 1200ms;
+			display: none;
+			// animation: blink infinite 1200ms;
 		}
 	}
 
@@ -94,6 +95,8 @@ body {
 		outline: none;
 		font-size: 1rem;
 		color: $tech-intence;
+		width: calc(100% - 160px);
+		// background-color: rgba(255,255,255, .1);
 
 		&::placeholder {
 			color: $tech-intence;

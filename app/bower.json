@@ -1,0 +1,18 @@
+{
+  "name": "cepheus",
+  "homepage": "https://github.com/HenkeJohansson/cepheus",
+  "authors": [
+    "Henke Johansson"
+  ],
+  "description": "",
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
