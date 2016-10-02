@@ -77,6 +77,14 @@ body {
 
 	.window {
 		padding-left: 5px;
+
+		p {
+
+			&.ls {
+				width: 32%;
+				display: inline-block;
+			}
+		}
 	}
 
 	.comp-name {
